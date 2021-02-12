@@ -2,4 +2,4 @@
 
 ## norm
 
-in visual mode you can use ```````:norm`
+in visual mode you can use `:norm` to do stuff
