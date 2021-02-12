@@ -23,3 +23,7 @@ export const fetchPostData = async (): Promise<Post[]> => {
   const slugs = await getPostSlugs()
   return Promise.all(slugs.map(fileNameToPost))
 }
+
+export const fetchPostBySlug = async (slug: string): Promise<Post> => {
+  return fileNameToPost(slug)
+}
